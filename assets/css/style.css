@@ -134,7 +134,7 @@ main {
 
 }
 
-#reasons > h2 {
+#reasons h2 {
     font-size: 280%;
     margin-bottom: 20px;
     text-align: center;
@@ -176,6 +176,24 @@ main {
 
 #benefits-mental h3 {
     padding-bottom: 0.5rem;
+}
+
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    margin-bottom: 20px;
+    width: 90vw;
+    height: 90vw;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    /* To make sure that on larger or landscape held phones, the image doesn't take up too much space */
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
