@@ -125,67 +125,37 @@ main {
 
 #reasons {
     width: 90%;
-    /*margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;*/
-    /* margin shorthand top, right, bottom, left*/
-    margin: 20px auto 20px auto;
-
+    margin: 20px auto;
 }
 
 #reasons h2 {
-    font-size: 280%;
     margin-bottom: 20px;
     text-align: center;
-
+    font-size: 280%;
 }
 
-
-/* Physical Benefits */
-
-#benefits-physical p {
-    /*line-height: 20px;*/
-    padding: 0.5rem 20px;
-    margin-bottom: 20px;
-    border-top: 1px solid #3a3a3a;
-    margin-top: 5px 0;
-
-}
-
-#benefits-physical div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
-}
-
-#benefits-physical h3 {
-    padding-bottom: 0.5rem;
-}
-
-/* Mental Benefits */
-
-#benefits-mental p {
-    padding: 0.5rem 20px;
     margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
     border-top: 1px solid #3a3a3a;
-    margin-top: 5px 0;
-}
-
-#benefits-mental div {
-    line-height: 20px;
-}
-
-#benefits-mental h3 {
-    padding-bottom: 0.5rem;
+    margin: 5px 0;
 }
 
 #circle-cover-bg {
     background: url('../images/reasons-image.webp') no-repeat top center / cover;
-    margin-bottom: 20px;
-    width: 90vw;
     height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
     /* Makes the square image into a circle */
     border-radius: 50%;
-    /* To make sure that on larger or landscape held phones, the image doesn't take up too much space */
     max-width: 300px;
     max-height: 300px;
 }
@@ -195,8 +165,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-
 
 
 /*Footer*/
@@ -260,6 +228,26 @@ main {
         width: 300px;
         right: 50px;
     }
+
+    /* Reasons Section */
+
+    #benefits-physical, 
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #benefits-physical > div, 
+    #benefits-mental > div {
+        width: 75%;
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* Larger devices (laptops and desktops, 992px and up) */
@@ -267,6 +255,34 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
 
+    }
+
+}
+
+/* Larger devices for screens 1200px and wider */
+@media screen and (min-width: 1200px) {
+    
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+      
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+      
     }
 
     
