@@ -26,6 +26,10 @@ h1, h2, h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /*Header*/
 header {
     background-color: #ffffff;
@@ -193,6 +197,10 @@ main {
 #times h3 {
     /* override the heading colour set in general styles */
     color: #fafafa;
+}
+
+#times p {
+    color: lightgrey;
 }
 
 /*Footer*/
