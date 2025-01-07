@@ -140,6 +140,42 @@ main {
 }
 
 
+/* Physical Benefits */
+
+#benefits-physical p {
+    /*line-height: 20px;*/
+    padding: 0.5rem 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #3a3a3a;
+    margin-top: 5px 0;
+
+}
+
+#benefits-physical div {
+    line-height: 20px;
+}
+
+#benefits-physical h3 {
+    padding-bottom: 0.5rem;
+}
+
+/* Mental Benefits */
+
+#benefits-mental p {
+    padding: 0.5rem 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #3a3a3a;
+    margin-top: 5px 0;
+}
+
+#benefits-mental div {
+    line-height: 20px;
+}
+
+#benefits-mental h3 {
+    padding-bottom: 0.5rem;
+}
+
 
 
 
