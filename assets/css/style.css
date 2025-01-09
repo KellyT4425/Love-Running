@@ -236,19 +236,19 @@ main {
     padding: 30px;
 }
 
-#signup-form > h2 {
+#signup-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
 
 .text-input {
     background: transparent;
-    color: #fafafa; 
+    color: #fafafa;
     width: 100%;
     height: 25px;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
-    border-radius: 2px;   
+    border-radius: 2px;
     padding: 0 5px;
 }
 
@@ -366,6 +366,30 @@ main {
     #photos {
         column-count: 3;
     }
+
+    /* Sign Up Section */
+
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
 }
 
 /* Larger devices (laptops and desktops, 992px and up) */
